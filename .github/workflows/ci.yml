@@ -28,6 +28,17 @@ jobs:
         with:
           modules-to-cache: BuildHelpers
           shell: powershell
+      - name: Ensure trailing newline in manifests
+        shell: powershell
+        working-directory: my_bucket
+        run: |
+          Get-ChildItem -Recurse -Path bucket -Filter *.json | ForEach-Object {
+            $p = $_.FullName
+            $bytes = [System.IO.File]::ReadAllBytes($p)
+            if ($bytes.Length -eq 0 -or $bytes[-1] -ne 10) {
+              [System.IO.File]::AppendAllText($p, "`r`n")
+            }
+          }
       - name: Test Bucket
         shell: powershell
         run: |
@@ -52,6 +63,17 @@ jobs:
         with:
           modules-to-cache: BuildHelpers
           shell: pwsh
+      - name: Ensure trailing newline in manifests
+        shell: powershell
+        working-directory: my_bucket
+        run: |
+          Get-ChildItem -Recurse -Path bucket -Filter *.json | ForEach-Object {
+            $p = $_.FullName
+            $bytes = [System.IO.File]::ReadAllBytes($p)
+            if ($bytes.Length -eq 0 -or $bytes[-1] -ne 10) {
+              [System.IO.File]::AppendAllText($p, "`r`n")
+            }
+          }
       - name: Test Bucket
         shell: pwsh
         run: |
