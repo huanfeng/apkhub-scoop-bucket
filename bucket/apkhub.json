@@ -1,33 +1,22 @@
 {
-    "version": "0.3.3",
-    "description": "A command-line tool for managing distributed APK repositories",
-    "homepage": "https://github.com/huanfeng/apkhub-cli",
-    "license": "MIT",
+    "version": "0.3.4",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.3/apkhub-cli-0.3.3-windows-x86_64.zip",
-            "hash": "c3ad39b951ab3b3d44672353c545b7a9b07753f93cb758f0613cfe8c179e26a0"
+            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.4/apkhub-cli-0.3.4-windows-x86_64.zip",
+            "bin": [
+                "apkhub.exe"
+            ],
+            "hash": "3523c0fc0faa18ae31de0733d77e4d56e2f2b091bc51b8ecdd74751f987ae445"
         },
         "arm64": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.3/apkhub-cli-0.3.3-windows-arm64.zip",
-            "hash": "77c9a6bb4116b1c78d23ec37d80d06bfeb45dee74f13dbb92f0735dd5a3a1485"
+            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.4/apkhub-cli-0.3.4-windows-arm64.zip",
+            "bin": [
+                "apkhub.exe"
+            ],
+            "hash": "88566c00627cf4e65ff3526215bfac5d4bafb0d5f8b31b75a4d94d94d7adb129"
         }
     },
-    "bin": "apkhub.exe",
-    "checkver": {
-        "github": "https://github.com/huanfeng/apkhub-cli"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/apkhub-cli-$version-windows-x86_64.zip"
-            },
-            "arm64": {
-                "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/apkhub-cli-$version-windows-arm64.zip"
-            }
-        },
-        "hash": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/SHA256SUMS.txt"
-        }
-    }
+    "homepage": "https://github.com/huanfeng/apkhub-cli",
+    "license": "MIT",
+    "description": "ApkHub CLI – manage distributed APK repositories"
 }
