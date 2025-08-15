@@ -1,16 +1,16 @@
 {
-    "version": "0.3.1",
+    "version": "0.3.3",
     "description": "A command-line tool for managing distributed APK repositories",
     "homepage": "https://github.com/huanfeng/apkhub-cli",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.1/apkhub-cli-0.3.1-windows-x86_64.zip",
-            "hash": "sha256:placeholder"
+            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.3/apkhub-cli-0.3.3-windows-x86_64.zip",
+            "hash": "c3ad39b951ab3b3d44672353c545b7a9b07753f93cb758f0613cfe8c179e26a0"
         },
         "arm64": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.1/apkhub-cli-0.3.1-windows-arm64.zip",
-            "hash": "sha256:placeholder"
+            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.3/apkhub-cli-0.3.3-windows-arm64.zip",
+            "hash": "77c9a6bb4116b1c78d23ec37d80d06bfeb45dee74f13dbb92f0735dd5a3a1485"
         }
     },
     "bin": "apkhub.exe",
