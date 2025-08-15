@@ -1,19 +1,15 @@
 {
-    "version": "1.0.0",
+    "version": "0.3.1",
     "description": "A command-line tool for managing distributed APK repositories",
     "homepage": "https://github.com/huanfeng/apkhub-cli",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v1.0.0/apkhub-1.0.0-windows-x86_64.zip",
-            "hash": "sha256:placeholder"
-        },
-        "32bit": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v1.0.0/apkhub-1.0.0-windows-i386.zip",
+            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.1/apkhub-cli-0.3.1-windows-x86_64.zip",
             "hash": "sha256:placeholder"
         },
         "arm64": {
-            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v1.0.0/apkhub-1.0.0-windows-arm64.zip",
+            "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v0.3.1/apkhub-cli-0.3.1-windows-arm64.zip",
             "hash": "sha256:placeholder"
         }
     },
@@ -24,13 +20,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/apkhub-$version-windows-x86_64.zip"
-            },
-            "32bit": {
-                "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/apkhub-$version-windows-i386.zip"
+                "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/apkhub-cli-$version-windows-x86_64.zip"
             },
             "arm64": {
-                "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/apkhub-$version-windows-arm64.zip"
+                "url": "https://github.com/huanfeng/apkhub-cli/releases/download/v$version/apkhub-cli-$version-windows-arm64.zip"
             }
         },
         "hash": {
